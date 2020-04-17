@@ -121,11 +121,22 @@ video {
   flex-direction: row;
 }
 .container1 .artists-container .artist {
+  display: flex;
+  flex-direction: column;
   width: 50%;
-  padding: 5%;
+  padding: 3%;
+  text-align: justify;
+  line-height: 1.5rem;
 }
 .container1 .artists-container .artist img {
-  max-width: 100%;
+  width: 350px;
+  height: 350px;
+  padding-bottom: 10%;
+  align-items: stretch;
+}
+.container1 .artists-container .artist a {
+  align-self: center;
+  padding-bottom: 5%;
 }
 header {
   display: flex;
