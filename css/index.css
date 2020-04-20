@@ -1,4 +1,169 @@
-/* Font in design files is Raleway */
-
-/* background-image in Design 👇
- url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg'); */
+a.button1 {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em dashed white;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: white;
+  text-align: center;
+  transition: all 0.2s;
+}
+a.button1:hover {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+@media all and (max-width: 30em) {
+  a.button1 {
+    display: block;
+    margin: 0.4em auto;
+  }
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+.container1 {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.container1 .artists-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.container1 .artists-container .artist {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 3%;
+  text-align: justify;
+  line-height: 1.5rem;
+}
+.container1 .artists-container .artist img {
+  width: 350px;
+  height: 350px;
+  padding-bottom: 10%;
+  align-items: stretch;
+}
+.container1 .artists-container .artist a {
+  align-self: center;
+  padding-bottom: 5%;
+}
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 5%;
+}
+header a {
+  color: black;
+  font-size: 2rem;
+  text-decoration: none;
+}
+header a:hover {
+  color: #60c7f0;
+}
+.title-container {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-bottom: 5%;
+}
+.title-container h1 {
+  font-size: 5vh;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
