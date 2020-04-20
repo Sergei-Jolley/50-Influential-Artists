@@ -261,15 +261,18 @@ function get20s() {
 
 /* Task 6: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */
 
+
 function lotsOfArt(artists) {
-
-  if (artists.paintings > 100) {
-    return artists.name = [];
+  let bigArt = []
+  for (let i = 0; i < artists.length; i++) {
+    if (artists[i].paintings > 100) {
+      bigArt.push(artists[i].name)
+    }
   }
-
+  return bigArt;
 }
 lotsOfArt(artists);
-console.log(lotsOfArt)
+console.log(lotsOfArt(artists));
 
 
 /* Task 7: Create a function called `
@@ -282,23 +285,32 @@ genre: Web Design,
 nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) "*/
 
-function addArtist( /* Code here */ ) {
-
-  /* Code here */
-
+function addArtist(artists) {
+  artists.push({
+    "id": 20,
+    "name": "Sergei",
+    "years": "1992 - monday",
+    "genre": "Web Design",
+    "nationality": "white",
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  })
+  return artists;
 }
+
+addArtist(artists);
+console.log(artists[19].name);
 
 
 /* Task 8: Create a function called `
       checkArtist ` that accepts a string (name of an artist) and checks if that artist is in the dataset. */
 
-function checkArtist( /* Code here */ ) {
-
-  /* Code here */
-
+function checkArtist(name) {
+  let filtered = artists.filter(function (artist) {
+    return artist.name === name;
+  });
+  return filtered.length > 0;
 }
-
-
+console.log(checkArtist('Sergei'));
 
 
 
